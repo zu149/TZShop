@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color">#F8F8F8</color>
+    <color name="btn">#FF8AC9</color>
+    <color name="textColorHint">#A0A1A3</color>
+    <color name="iconColor">#333333</color>
+    <color name="textPhoneColor">#A0A1A3</color>
+    <color name="textColor">#3E3E3E</color>
+    <color name="button">#D62F89</color>
+    <color name="textPage">#A0A1A3</color>
+    <color name="rating">#F9A249</color>
+    <color name="button2">#D62F89</color>
+
+
+</resources>

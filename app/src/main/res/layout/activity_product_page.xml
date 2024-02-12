@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ProductPageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/impart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="btn"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/impart"
+
+         />
+
+</androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+    <LinearLayout
+        android:id="@+id/some_id"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="16dp"
+
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/like"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:background="@drawable/like"
+
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:background="@drawable/a54a876a5" />
+
+
+    </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/question"
+                />
+
+            <LinearLayout
+                android:id="@+id/pagination"
+                android:layout_width="52dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ellipsis"
+                android:layout_gravity="center"
+                android:orientation="horizontal" />
+
+            <TextView
+            android:id="@+id/title_card"
+            android:layout_width="52dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/title_card"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+             />
+
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/subtitle"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+            android:id="@+id/available"
+            android:layout_width="157dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/available"
+            android:textColor="@color/textPage"
+            android:textSize="12sp"
+             />
+
+        <RelativeLayout
+            android:id="@+id/some_id3"
+            android:layout_width="167dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+             >
+
+            <RelativeLayout
+                android:id="@+id/stars"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+            <RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:layout_marginTop="1.5dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:progressTint="@color/rating"
+                />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedback"
+                android:layout_width="85dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                >
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="18dp"
+                    android:layout_height="16dp"
+                    android:text="@string/rating"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/textPage"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="1sp"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="65dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="4 отзыва"
+                    android:textColor="@color/textPage"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/some_id5"
+            android:layout_width="156dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/priceSale"
+                android:layout_width="64dp"
+                android:layout_height="31dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/priceSale"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginEnd="48dp"
+                android:layout_toEndOf="@+id/priceSale"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/price"
+                android:textColor="@color/textPage"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/elements_el"
+                android:layout_width="34dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115dp"
+                android:background="@drawable/price_sale"
+                android:clipToOutline="true" >
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="22dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="9dp"
+
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="-1sp"
+                    android:text="@string/sale"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/some_id6"
+            android:layout_width="74dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+
+            android:lineSpacingExtra="2sp"
+            android:text="@string/some_id6"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+             />
+
+    <RelativeLayout
+        android:id="@+id/transfer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/color"
+        android:clipToOutline="true"
+         >
+
+    <TextView
+        android:id="@+id/title_card2"
+        android:layout_width="46dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/title_card"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:lineSpacingExtra="1sp"
+        android:gravity="center_vertical"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_smal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="btn"
+            android:layout_marginRight="8dp"
+            android:clipToOutline="true"
+            android:background="@drawable/smal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/description"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+         />
+
+
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="70dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/hide"
+        android:textColor="@color/textPhoneColor"
+        android:textSize="12sp"
+         />
+
+    <TextView
+        android:id="@+id/some_id9"
+        android:layout_width="125dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="Характеристики"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/some_id10"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cards"
+            android:layout_width="343dp"
+            android:layout_height="32dp"
+            android:background="@drawable/line"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/title_cards"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:gravity="right|top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/value"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cards2"
+            android:layout_width="343dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/line"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/title_cards2"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:gravity="right|top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/value2"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cards3"
+            android:layout_width="343dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/line"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/title_cards3"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+            <TextView
+                android:id="@+id/label3"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:gravity="right|top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/value3"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:translationY="-0.64sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--
+    Font family: SF Pro Display
+    Line height: 21sp
+    (identical to box height)
+    -->
+
+    <!-- styles.xml -->
+
+    <TextView
+        android:id="@+id/some_id11"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="Состав"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+         />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/ingredients"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+         />
+
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="70dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:text="@string/more"
+        android:textColor="@color/textPhoneColor"
+        android:textSize="12sp"
+        android:lineSpacingExtra="1sp"
+
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button2"
+        android:text="Добавить корзину"
+        android:textColor="@color/white"
+         />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

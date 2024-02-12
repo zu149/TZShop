@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79014310366",
+    "project_id": "tzshop-9dd29",
+    "storage_bucket": "tzshop-9dd29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79014310366:android:2f963bb83fbe365dafed4f",
+        "android_client_info": {
+          "package_name": "com.example.tzshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyZYwXRh3VawO9FqLzCVRYL_-hg31mO08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

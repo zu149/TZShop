@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="textView2"><u>условия программы лояльности</u>.</string>
+
+    <string name="name1">Марина</string>
+    <string name="name2">Иванова</string>
+
+    <string name="title_home">Главная</string>
+    <string name="title_katalog">Каталог</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_sale">Акции</string>
+    <string name="title_bag">Корзина</string>
+
+    <string name="title">Личный кабинет</string>
+    <string name="label2">Фильтры</string>
+
+    <string name="phone">+ 7 993 877 44 02</string>
+    <string name="favourites">Избранное</string>
+    <string name="shops">Магазины</string>
+    <string name="name">Марина </string>
+    <string name="surname">Иванова</string>
+    <string name="oferta">Оферта</string>
+    <string name="btn_back">Выход</string>
+
+    <string name="title_card">A`PIEU</string>
+    <string name="title_card2">A`PIEU</string>
+    <string name="subtitle">Пенка для умывания`A`PIEU` `DEEP CLEAN` 200 мл</string>
+    <string name="available">Доступно для заказа 30 штук</string>
+    <string name="some_id6">Описание </string>
+    <string name="priceSale">549 ₽</string>
+    <string name="price">899 ₽</string>
+    <string name="sale">-39%</string>
+    <string name="rating">4.3</string>
+    <string name="description">Пенка для лица Глубокое очищение содержит минеральную воду и соду, способствует глубокому очищению пор от различных загрязнений,
+        контролирует работу сальных желез, сужает поры.</string>
+    <string name="hide">Скрыть</string>
+    <string name="more">Подробнее</string>
+    <string name="title_cards">Артикул товара</string>
+    <string name="value">133987</string>
+    <string name="title_cards2">Область использования</string>
+    <string name="value2">Лицо</string>
+    <string name="title_cards3">Страна производства</string>
+    <string name="value3">Республика Корея</string>
+    <string name="ingredients">Water, Propylene Glycol, Dipropylene Glycol, Lauric acid, Myristic Acid, Potassium Hydroxide, Lauryl Hydroxysultaine,</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

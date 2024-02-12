@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cards"
+        android:layout_width="168dp"
+        android:layout_height="287dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/cart_product"
+        android:clipToOutline="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="168dp"
+            android:layout_height="144dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/a54a876a5" />
+
+        <RelativeLayout
+            android:id="@+id/pagination"
+            android:layout_width="32dp"
+            android:layout_height="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/ellipsis" />
+
+
+        <RelativeLayout
+            android:id="@+id/some_id2"
+            android:layout_width="27dp"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="144dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="24dp"
+                android:layout_height="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/price"
+                android:textColor="@color/textPage"
+                android:textSize="9sp" />
+            <!--
+            Font family: SF Pro Display
+            Line height: 10sp
+            (identical to box height)
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/some_id3"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="160dp">
+
+            <TextView
+                android:id="@+id/priceWithDiscount"
+                android:layout_width="38dp"
+                android:layout_height="18dp"
+                android:text="@string/priceSale"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:lineSpacingExtra="1sp"
+                android:gravity="center_vertical"
+                />
+
+            <RelativeLayout
+                android:id="@+id/elements_el"
+                android:layout_width="34dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="42dp"
+                android:background="@drawable/price_sale"
+                android:clipToOutline="true" >
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="22dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="9dp"
+
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="-1sp"
+                    android:text="@string/sale"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="39dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:text="@string/title_card"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:lineSpacingExtra="1sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="198dp"
+            android:textColor="@color/textColor"
+            android:textSize="10sp"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="top"
+            />
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="46dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="247dp"
+            android:orientation="horizontal"
+            >
+
+            <RatingBar
+                android:id="@+id/star"
+                android:numStars="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                android:layout_marginTop="1.5dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:progressTint="@color/rating"
+                />
+
+
+            <TextView
+                android:id="@+id/rating"
+                android:gravity="center_horizontal|top"
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/star"
+
+                android:lineSpacingExtra="1sp"
+                android:text="@string/rating"
+                android:textColor="@color/rating"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="12dp"
+                android:layout_height="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="-1sp"
+                android:text="(4)"
+                android:textColor="@color/textColor"
+                android:textSize="9sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_smal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="136dp"
+            android:layout_alignParentBottom="true"
+            android:clipToOutline="true"
+            android:background="@drawable/button_plus"
+            >
+
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="138dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/favourites"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

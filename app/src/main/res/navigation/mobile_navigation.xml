@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/katalog">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tzshop.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/katalog"
+        android:name="com.example.tzshop.ui.katalog.KatalogFragment"
+        android:label="@string/title_katalog"
+        tools:layout="@layout/fragment_katalog" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.tzshop.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/sale"
+        android:name="com.example.tzshop.ui.sale.SaleFragment"
+        android:label="@string/title_sale"
+        tools:layout="@layout/fragment_sale" />
+
+    <fragment
+        android:id="@+id/bag"
+        android:name="com.example.tzshop.ui.bag.BagFragment"
+        android:label="@string/title_bag"
+        tools:layout="@layout/fragment_bag" />
+</navigation>

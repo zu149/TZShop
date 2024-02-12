@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|top"
+
+        android:lineSpacingExtra="1sp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:translationY="-0.85sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/cards"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/cards"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:layout_width="108dp"-->
+        <!--            android:layout_height="18dp"-->
+        <!--            android:text="@string/title_home"-->
+        <!--            android:lineSpacingExtra="1sp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            />-->
+        <!--
+        Font family: SF Pro Display
+        Line height: 18sp
+        -->
+
+
+        <RelativeLayout
+            android:id="@+id/some_id"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp">
+
+            <RelativeLayout
+                android:id="@+id/profile"
+                android:layout_width="24dp"
+
+                android:layout_height="24dp"
+                android:layout_marginTop="5.5dp"
+                android:background="@drawable/profile" />
+
+            <RelativeLayout
+                android:id="@+id/frame_636"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="48dp">
+
+                <RelativeLayout
+                    android:id="@+id/frame_635"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal"
+                    >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/surname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="2dp"
+
+                        android:layout_toEndOf="@+id/name"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="1sp"
+                        android:text="@string/surname"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="-1sp"
+                    android:text="@string/phone"
+                    android:textColor="@color/textPhoneColor"
+                    android:textSize="10sp" />
+                <!--
+                Font family: SF Pro Display
+                Line height: 11sp
+                (identical to box height)
+                -->
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_smal"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="btn"
+            android:layout_marginRight="8dp"
+            android:clipToOutline="true"
+            android:background="@drawable/back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/some"
+        android:layout_width="343dp"
+        android:layout_height="277dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cards">
+
+        <RelativeLayout
+            android:id="@+id/favourites"
+            android:layout_width="343dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/cards"
+            android:clipToOutline="true">
+
+            <RelativeLayout
+                android:id="@+id/some_id2"
+                android:layout_width="148dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile2"
+                    android:layout_width="24dp"
+
+                    android:layout_height="24dp"
+                    android:layout_marginTop="5.5dp"
+                    android:background="@drawable/favourites" />
+
+                <RelativeLayout
+                    android:id="@+id/frame_6362"
+                    android:layout_width="108dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="48dp">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="108dp"
+                        android:layout_height="18dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="1sp"
+                        android:text="@string/favourites"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/caption2"
+                        android:layout_width="81dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="-1sp"
+                        android:text="1 товар"
+                        android:textColor="@color/textPhoneColor"
+                        android:textSize="10sp" />
+                    <!--
+                    Font family: SF Pro Display
+                    Line height: 11sp
+                    (identical to box height)
+                    -->
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_smal2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="btn"
+                android:layout_marginRight="8dp"
+                android:clipToOutline="true"
+                android:background="@drawable/smal" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cards3"
+            android:layout_width="343dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/favourites"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cards"
+            android:clipToOutline="true">
+
+
+            <RelativeLayout
+                android:id="@+id/some_id3"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/shop" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="80dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="@string/shops"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <!--
+                    Font family: SF Pro Display
+                    Line height: 18sp
+                    -->
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_smal3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="btn"
+                android:layout_marginRight="8dp"
+                android:clipToOutline="true"
+                android:background="@drawable/smal" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cards5"
+            android:layout_width="343dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/cards4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/cards"
+            android:clipToOutline="true">
+
+
+            <RelativeLayout
+                android:id="@+id/some_id5"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/offer" />
+
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="60dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="@string/oferta"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <!--
+                Font family: SF Pro Display
+                Line height: 18sp
+                -->
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_smal5"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="btn"
+                android:layout_marginRight="8dp"
+                android:clipToOutline="true"
+                android:background="@drawable/smal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cards4"
+            android:layout_width="343dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/cards3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cards"
+            android:clipToOutline="true">
+
+
+            <RelativeLayout
+                android:id="@+id/some_id4"
+                android:layout_width="161dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="121dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="Обратная связь"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <!--
+                Font family: SF Pro Display
+                Line height: 18sp
+                -->
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_smal4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="btn"
+                android:layout_marginRight="8dp"
+                android:clipToOutline="true"
+                android:background="@drawable/smal" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cards6"
+            android:layout_width="343dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/cards5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cards"
+            android:clipToOutline="true">
+
+
+            <RelativeLayout
+                android:id="@+id/some_id6"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/refund" />
+
+                <TextView
+                    android:id="@+id/title6"
+                    android:layout_width="120dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="Возврат товара"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <!--
+                Font family: SF Pro Display
+                Line height: 18sp
+                -->
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_smal6"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:contentDescription="btn"
+                android:layout_marginRight="8dp"
+                android:clipToOutline="true"
+                android:background="@drawable/smal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="143dp"
+        android:contentDescription="btn"
+        android:background="@drawable/button"
+        android:text="Выйти"
+
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/some" />
+
+
+    <!--
+    Font family: SF Pro Display
+    Line height: 18sp
+    translationY compensates for the line height adjustment of text
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
